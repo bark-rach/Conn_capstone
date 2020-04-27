@@ -37,12 +37,12 @@ $H_a:$ **The group of women who recieve epidurals during childbirth will give ne
 
 8) Produce a graph of a simulation for the expected results. Create a dataMaker-like function in R to create and plot the data. Label and scale any axis. The graph should illustrate the magnitude of the expected response, or the level of response that you expect to see and would be minimally scientifically relevant. Be sure to illustrate any variation that is expected.
 
-```{r message=FALSE, warning=FALSE}
+```r 
 #Load relevant packages
 library(tidyverse)
 ```
 
-```{r message=FALSE, warning=FALSE}
+```r
 feedingDataMaker <- function(n, means) {
 
   params <- data.frame(n, means)
@@ -75,7 +75,7 @@ ggplot(data) +
 
 9. Write and perform a Monte Carlo analysis to calculate a sample size necessary to test the hypothesis. This Monte Carlo must test the primary endpoint.
 
-```{r message=FALSE, warning=FALSE}
+```r
 sims = 1000 #number of Monte Carlo simulations to run. 
 n = c(25, 25)
 means = c(1, 2)
