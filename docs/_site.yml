@@ -1,0 +1,12 @@
+name: "Capstone"
+output_dir: "docs"
+navbar:
+  title: "Capstone"
+  left:
+  - text: "Home"
+   href: home.html
+  - text: "Rachel's Capstone"
+   href: index.html
+output:
+  html_document:
+ theme: jekyll-theme-modernist
